@@ -1,0 +1,1 @@
+const projectName = 'product_landing_page';

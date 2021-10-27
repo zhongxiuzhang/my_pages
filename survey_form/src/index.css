@@ -1,0 +1,78 @@
+html{
+  background-image: linear-gradient(rgba(120,120,200,0.85),rgba(94,94,160,0.85)),url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+  background-attachment:fixed;
+  background-size:cover;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue); 
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body{
+  
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.5;
+  margin-bottom: 30px;
+  color: white;
+}
+.em{
+  font-family:Italic;
+  font-weight:10;
+}
+.center{
+  text-align: center;
+}
+form{
+  background-color: rgba(50,50,100,0.9);
+  border-radius:2%;
+  width:500px;
+  padding: 20px;
+  font-color: white;
+  margin-left:auto;
+  margin-right:auto;
+  align: center;
+}
+.spacing{
+  display:inline-block;
+  margin-bottom:12px;
+}
+.inputFull{
+  width:100%;
+  height:18px;
+  border: none;
+  border:solid 1px #ccc;
+  border-radius:4px;
+}
+button{
+  width:100%;
+  height:30px;
+  font-size:15px;
+  border: none;
+  border:solid 0px #ccc;
+  border-radius:4px;
+  background-color:rgba(89,155,85,1);
+  color:white;
+  
+}

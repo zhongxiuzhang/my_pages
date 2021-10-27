@@ -1,0 +1,144 @@
+:root{
+  --background-color: rgba(230,230,230,1);
+  --color-yellow: rgba(252,224,63,1);
+  --color-orange: rgba(252,142,63,1);
+}
+#header{
+  background-color:var(--background-color);
+  width:100%;
+  height:60px;
+  position:fixed;
+  top: 0px;
+  z-index:2;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:var(--background-color);
+}
+.nav-link{
+  font-size:16px;
+  margin-right:70px;
+  text-decoration:none;
+  color:black;
+}
+.formSection{
+  margin-top:80px;
+  text-align:center;
+}
+#email{
+  width:250px;
+  height:20px;
+}
+.submitBtn{
+  margin-top:20px;
+  width:150px;
+  height:30px;
+  font-size:15px;
+  border:none;
+  background-color:var(--color-yellow);
+  text-transform: uppercase;
+  font-weight:900;
+  cursor:pointer;
+}
+.submitBtn:hover{
+  animation-name:turnOrange;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+@keyframes turnOrange{
+  0%{
+    background-color:var(--color-yellow);
+  }
+  100%{
+    background-color:var(--color-orange);
+  }
+}
+#features{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:100px 800px;
+  grid-template-rows:repeat(3,120px);
+  justify-content:center;
+  align-items:center;
+}
+@media (max-width:700px){
+  #features{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:100px 400px;
+  grid-template-rows:repeat(3,120px);
+  justify-content:center;
+  align-items:center;
+}
+}
+.icon{
+  color: var(--color-orange);
+}
+.featureTextH2{
+  margin-bottom:-15px;
+}
+
+#workVideo{
+  margin-top:20px;
+  text-align:center;
+}
+
+#pricing{
+  margin-top:40px;
+  text-align:center;
+  display:grid;
+  grid-template-columns:repeat(3,300px);
+  justify-content:center;
+  align-items:center;
+}
+.priceItem{
+  margin:10px;
+  border:1px solid black;
+}
+.priceItemH4{
+  margin:0px;
+  height:50px;
+  line-height:50px;
+/*   vertical-align: middle; */
+  justify-content:center;
+  text-align:center;
+  background-color:rgba(202,202,202,1);
+}
+.selectBtn{
+  margin-top:0px;
+  margin-bottom:10px;
+  width:90px;
+  height:30px;
+  font-size:15px;
+  border:none;
+  background-color:var(--color-yellow);
+  text-transform: uppercase;
+  font-weight:900;
+  cursor:pointer;
+}
+.selectBtn:hover{
+  animation-name:turnOrange;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+footer{
+  background-color:rgba(202,202,202,1);
+  text-align:right;
+  margin-top:40px;
+  margin-bottom:-20px;
+}
+.inline{
+  display:inline-block;
+  margin-right:20px;
+  margin-bottom:-25px;
+}
+.copyRight{
+  color:grey;
+  font-size:15px;
+  margin-top:5px;
+  margin-right:5px;
+}
